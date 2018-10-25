@@ -1,0 +1,74 @@
+<!--
+Jonathan Winter
+
+Sources:
+W3School tutorial
+
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>externalStyle.html</title>
+    <link rel = "stylesheet"
+          type = "text/css"
+          href = "style.css" />
+</head>
+<body>
+
+<div class="topnav">
+    <a class="active" href="Webpage.html">Home</a>
+    <a href="SignUp.html">Sign Up</a>
+    <a href="SignIn.html">Sign In</a>
+    <a href="About.html">About</a>
+</div>
+
+<!-- HERE IS WHERE YOUR STUFF GOES -->
+
+<div style="padding-left:16px">
+    <h2>Welcome to the Basic tab webpage</h2>
+    <p>Use the tabs above to navigate through the website<br>
+
+
+    <form action="createpost.php" method="get">
+        <textarea name="body"></textarea>
+        <input type="submit"/>
+    </form>
+
+
+
+</div>
+
+<!-- Animation
+
+Note: Look into why the mouse animation wont allow mouseclicks
+on the navigation tab
+
+<script type="text/javascript">
+    document.onmousemove = animatedCircles;
+
+    function animatedCircles (event) {
+        var circle = document.createElement("div");
+        circle.setAttribute("class", "circle");
+        document.body.appendChild(circle);
+
+        circle.style.left = event.clientX + 'px';
+        circle.style.top = event.clientY + 'px';
+
+        circle.style.transition = "all 0.5s linear 0s";
+
+        circle.style.left = circle.offsetLeft - 20 + 'px';
+        circle.style.top = circle.offsetTop - 20 + 'px';
+
+        circle.style.width = "50px";
+        circle.style.height = "50px";
+        circle.style.borderWidth = "5px";
+        circle.style.opacity = 0;
+    }
+    </script>
+End Animation -->
+
+</body>
+</html>
